@@ -4,7 +4,13 @@
   "main": "src/index.js",
   "compatibility_date": "2026-09-17",
   "observability": {
-    "enabled": true
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false
+    }
   },
   "vars": {
     "GREETING": "hello from the edge"
