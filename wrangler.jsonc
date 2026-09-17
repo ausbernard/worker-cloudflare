@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "worker-cloudflare",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-17",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "GREETING": "hello from the edge"
+  }
+  // Uncomment to test a KV binding (create it first:
+  //   npx wrangler kv namespace create DEMO_KV)
+  // "kv_namespaces": [
+  //   { "binding": "DEMO_KV", "id": "<paste-id-here>" }
+  // ]
+}
